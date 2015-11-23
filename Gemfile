@@ -28,8 +28,10 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
-# flexible authentication solution for Rails with Warden
+# Use devise for user authentication
 gem 'devise', '~> 3.5', '>= 3.5.2'
+# Use stripe for handling payments
+gem 'stripe', '~> 1.31'
 
 # Use Unicorn as the app server
 # gem 'unicorn'
