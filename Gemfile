@@ -32,6 +32,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'devise', '~> 3.5', '>= 3.5.2'
 # Use stripe for handling payments
 gem 'stripe', '~> 1.31'
+# User figaro to hide secret keys
 gem 'figaro', '~> 1.1', '>= 1.1.1'
 
 # Use Unicorn as the app server
