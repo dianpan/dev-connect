@@ -1,8 +1,9 @@
 $(document).ready(function() {
+  //grab Stripe public key for permission
   Stripe.setPublishableKey($('meta[name="stripe-key"]').attr('content'));
   $('#form-submit-btn').click(function(e){
     e.preventDefault();
-    //prevents users from clicking on the btn multiple times
+    //disable submit button to prevent additional clicks
     $('input[type=submit]').prop('disabled', true);
     var error = false;
     var ccNum = $('#card_number').val(),
@@ -10,6 +11,7 @@ $(document).ready(function() {
         expMonth = $('#card_month').val(),
         expYear = $('#card_year').val();
     if(!error) {
+      //send card information to Stripe
       Stripe.createToken({
         number: ccNum,
         cvc: cvcNum,
@@ -18,11 +20,12 @@ $(document).ready(function() {
       }, stripeResponseHandler);
     }
     return false;
-  }); //form submission
+  });
 
   function stripeResponseHandler(status, response) {
     var f = $("#new_user");
     var token = response.id;
+    //add token as a hidden field in form
     f.append('<input type="hidden" name="user[stripe_card_token]" value="' + token + '" />');
     f.get(0).submit();
   }
