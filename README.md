@@ -5,8 +5,9 @@ subscription based site where users can connect to a community of investors, ent
 This app was created so that I could continue to practice Rails, and learn new technologies like using 3rd party payment APIs and new CSS frameworks.
 
 #### Technologies used: 
-- APIs: Stripe API 
+- APIs: Stripe, SendGrid 
 - CSS framework: Bootstrap
+- Backend: Rails 
 
 #### How to run this code 
 - git clone the repo 
