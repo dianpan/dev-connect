@@ -30,10 +30,15 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 
 # Use devise for user authentication
 gem 'devise', '~> 3.5', '>= 3.5.2'
+
 # Use stripe for handling payments
 gem 'stripe', '~> 1.31'
+
 # User figaro to hide secret keys
 gem 'figaro', '~> 1.1', '>= 1.1.1'
+
+# Use paperclip for image uploads
+gem "paperclip", "~> 4.3"
 
 # Use Unicorn as the app server
 # gem 'unicorn'
