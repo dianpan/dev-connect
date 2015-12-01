@@ -1,1 +1,5 @@
-List of all users
+<h1>Welcome to the Community<h1>
+<h3>Check out our members<h3>
+<% @users.each do |user| %>
+  <%= user.profile.first_name %><br>
+<% end %>
