@@ -22,11 +22,11 @@ in terminal, run 'rails s'
 in browser, navigate to 'localhost:3000'
 ```
 
-###Free Users 
+####Free users 
 - signup for the free user account 
 - no access to user contact information
 
-###Premium Users 
+####Premium users 
 - use the following credit card simulation for premium user access: 
 ```
 card number: 4242424242424242
