@@ -1,16 +1,16 @@
 # Dev Connect
-subscription based site where users can connect to a community of investors, entrepreneurs and developers.  Any user can sign up for free and receive basic view only access. Paid users can access all users and their contact information. [View live site](http://dev-connections.herokuapp.com/). 
+Dev Connect is a subscription based site where users can connect to a community of investors, entrepreneurs and developers.  Any user can sign up for free and receive basic view only access to members of the community. Paid users can access all users and their contact information. [View live site](http://dev-connections.herokuapp.com/). 
 
-#### Learning Goals
-1. continue to practice Rails, build on existing knowledge
-2. learn new technologies like using a 3rd party payments API, embed email functionality, learn another CSS framework 
+#### Goals
+I created this site to continue to practice Rails and build on my existing knowledge.  I also used this project to learn new technologies like utilizing APIs, email functionality, and additional CSS frameworks.
 
 #### Technologies used: 
 - Backend: Rails 
 - Database: Postgres 
 - APIs: Stripe, SendGrid 
-- CSS framework: Bootstrap
-
+- CSS framework: [Bootstrap](http://getbootstrap.com/)
+- User authentication: [Devise](https://github.com/plataformatec/devise)
+- Image hosting: [Paperclip](https://github.com/thoughtbot/paperclip)
 
 #### How to run this code 
 - git clone the repo 
@@ -19,4 +19,15 @@ subscription based site where users can connect to a community of investors, ent
 - in terminal, run 'rake db:setup'
 - in terminal, run 'rails s'
 - in browser, navigate to 'localhost:3000'
+
+###Free Users 
+- signup for the free user account 
+- no access to user contact information
+
+###Premium Users 
+- use the following dummy credit card: 
+-   card number: 4242424242424242
+-   CVV: any 3 digit number
+-   expiration date: any date in the future 
+- access to all user contact information 
 
